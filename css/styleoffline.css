@@ -1,0 +1,190 @@
+*{
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+}
+
+
+body {
+    background-color: #2A2E30;
+    width: 100vw;
+    height: 100vh;
+
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+
+}
+
+
+#start-button {
+
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 4px;
+    border-color: gray;
+
+}
+
+/* Gallery button */
+
+#gallery-button {
+    float: right;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 50px;
+
+}
+
+#gallery-button img {
+    width: 100%;
+}
+
+#gallery-button:hover {
+    background-color: lightslategray;
+}
+
+/* camera button in gallery */
+
+#camera-button {
+    background-color: transparent;
+    border: none;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 50px;
+
+    
+}
+
+#camera-button img {
+width: 100%;
+}
+
+#camera-button:hover {
+    background-color: lightslategray;
+}
+
+/*ta bort vertikal scrollbar*/
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+/* Kamera placering */
+#videoDiv, #picture-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+/* Första sidan text */
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 170px;
+}
+
+
+/* kamera icon första sidan */
+
+.camIcon {
+    width: 200px;
+    height: auto;
+}
+
+
+/* Knapp på första sidan som tar dig vidare */
+#start-button {
+    width: 200px;
+    height: auto;
+    font-size: large;
+    background-color: gray;
+}
+
+#galleri-text {
+    color: white;
+    font-size: 30px;
+
+    font-family: "Times New Roman", Times, serif;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    
+}
+
+/*Ta bild knappen i camera.html */
+#take-picture, #newPic {
+    width: 280px;
+    height: 25px;
+
+    font-style: normal;
+    font-weight: 700;
+
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+
+    display: flexbox;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+
+
+}
+
+#picture {
+    width: 640px;
+    height: 480px;
+}
+
+#picture-div {
+    display: none;
+}
+
+/* deleteButton i galleri */ 
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 20px;
+    gap: 2em;
+
+}
+
+#gallery div {
+    position: relative;
+    
+}
+
+#gallery div button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.deleteButton:hover {
+    background-color: lightslategray !important;
+}
